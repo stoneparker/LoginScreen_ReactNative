@@ -25,7 +25,8 @@ export default function Input({ name }) {
                if (inputRef.current) {
                   inputRef.current.value = value
                }
-            }} 
+            }}
+            style={ error && { borderColor: '#f00'}} 
          />
       </Container>
    );
